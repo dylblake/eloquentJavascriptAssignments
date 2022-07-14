@@ -12,17 +12,13 @@ createRightTriangle(4, "T");
 const fizzBuzz = (numToCountTo) => {
   const outputArray = [];
   for (let j = 1; j < numToCountTo + 1; j++) {
-    let result = "default";
     if (j % 5 === 0 && j % 3 === 0) {
       result = "FizzBuzz";
-    }
-    if (j % 3 === 0) {
+    } else if (j % 3 === 0) {
       result = "Fizz";
-    }
-    if (j % 5 === 0) {
+    } else if (j % 5 === 0) {
       result = "Buzz";
-    }
-    if (result === "default") {
+    } else {
       result = j;
     }
     outputArray.push(result);
